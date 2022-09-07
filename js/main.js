@@ -50,7 +50,7 @@ $(function () {
       let panel = this.nextElementSibling;
       console.log(panel.style.height);
       if (panel.style.height === "0px" || panel.style.height === "") {
-        panel.style.height = "100px";
+        panel.style.height = "auto";
       } else {
         panel.style.height = "0px";
       }

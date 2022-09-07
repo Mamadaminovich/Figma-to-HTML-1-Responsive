@@ -10,6 +10,7 @@ a,
 button,
 li {
   font-family: "DM Sans", sans-serif;
+  cursor: pointer;
 }
 .button {
   padding: 13px 31px;
@@ -19,7 +20,6 @@ li {
   letter-spacing: -0.16px;
   border: 1.5px solid transparent;
   border-radius: 50px;
-  cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 .description {
@@ -658,6 +658,9 @@ body {
   border-radius: 3px;
   padding: 2px 8px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pricing__box-2 .pricing__box-title,
 .pricing__box-2 .pricing__box-subtitle {
@@ -729,8 +732,8 @@ body {
 }
 .panel {
   height: 0px;
-  overflow: auto;
-  transition: height 0.2s linear;
+  overflow: hidden;
+  transition: height 0.3s linear;
   color: #343d48;
   opacity: 0.7;
   padding: 0 5px 5px 20px;
@@ -743,7 +746,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 5px;
+  padding: 0 10px;
   padding-top: 30px;
 }
 .footer__list {
